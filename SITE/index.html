@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ParaVênus — Empresas de tecnologia avaliadas por mulheres</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@400;600;700;800&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a href="#topo" class="logo">
+      <span class="logo-mark">♀</span>ParaVênus
+    </a>
+    <nav class="main-nav">
+      <a href="#ranking">Ranking</a>
+      <a href="#contar">Contar história</a>
+      <a href="#depoimentos">Depoimentos</a>
+      <a href="#sobre">Sobre os selos</a>
+      <a href="#criar-curriculo">Criar currículo</a>
+    </nav>
+    <div class="header-ctas">
+      <a href="#criar-curriculo" class="btn btn-nav-outline">📄 Criar currículo</a>
+      <a href="#contar" class="btn btn-nav">Avaliar empresa</a>
+    </div>
+  </div>
+</header>
+
+<a id="topo"></a>
+
+<!-- ============ FAIXA INSPIRACIONAL (estilo Olga) ============ -->
+<section class="faixa-inspira">
+  <div class="wrap faixa-inner">
+    <div class="faixa-retrato" aria-hidden="true">
+      <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="100" cy="100" r="98" fill="url(#gradRetrato)"/>
+        <circle cx="100" cy="88" r="34" fill="#2B0B3F"/>
+        <path d="M40 172c8-40 34-62 60-62s52 22 60 62" fill="#2B0B3F"/>
+        <path d="M66 78c4-22 20-34 34-34s30 12 34 34c2 14-4 22-4 22s-6-14-30-14-30 14-30 14-6-8-4-22z" fill="#3A1740"/>
+        <defs>
+          <linearGradient id="gradRetrato" x1="0" y1="0" x2="200" y2="200">
+            <stop offset="0%" stop-color="#FFC93C"/>
+            <stop offset="55%" stop-color="#FF7A3D"/>
+            <stop offset="100%" stop-color="#FF2E93"/>
+          </linearGradient>
+        </defs>
+      </svg>
+    </div>
+    <div class="faixa-texto">
+      <p class="faixa-eyebrow">Mulheres que abriram caminho</p>
+      <blockquote>
+        “Computação é importante demais para ser deixada só para os homens.”
+      </blockquote>
+      <p class="faixa-autora">Karen Spärck Jones (1935–2007), cientista da computação britânica, pioneira em recuperação de informação e processamento de linguagem natural — base técnica por trás dos mecanismos de busca que usamos hoje.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ HERO + BUSCA ============ -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <h1>Descubra a <span class="hero-riscado">realidade</span> de se trabalhar na área antes de mandar o currículo.</h1>
+    <p class="hero-sub">Notas, selos e relatos reais de mulheres sobre empresas de tecnologia. Sem propaganda de RH, sem "somos uma família".</p>
+
+    <form class="search-card" role="search" onsubmit="return false;">
+      <svg class="search-icon" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="11" cy="11" r="7"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      <input type="text" placeholder="Busque por empresa, ex: “Vênus Tech”, “fintech”, “startup”...">
+      <button type="submit" class="btn btn-search">Buscar</button>
+    </form>
+
+    <div class="hero-stats">
+      <div><strong>1.482</strong><span>relatos publicados</span></div>
+      <div><strong>317</strong><span>empresas avaliadas</span></div>
+      <div><strong>52</strong><span>com selo Diamante ou Ouro</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEGENDA DOS SELOS ============ -->
+<section class="legenda" id="sobre">
+  <div class="wrap">
+    <h2>Como funcionam os selos</h2>
+    <p class="legenda-sub">Cada empresa recebe um <strong>nível</strong>, com base na nota média dada pela comunidade, e <strong>características</strong>, que mostram políticas e fatos concretos — não promessas de site institucional.</p>
+
+    <div class="niveis-grid">
+      <div class="nivel-card nivel-diamante">
+        <span class="medalha">💎</span>
+        <strong>Diamante</strong>
+        <p>Nota 9 a 10. Referência absoluta.</p>
+      </div>
+      <div class="nivel-card nivel-ouro">
+        <span class="medalha">🥇</span>
+        <strong>Ouro</strong>
+        <p>Nota 7,5 a 8,9. Ambiente muito bem avaliado.</p>
+      </div>
+      <div class="nivel-card nivel-prata">
+        <span class="medalha">🥈</span>
+        <strong>Prata</strong>
+        <p>Nota 6 a 7,4. Pontos positivos, mas com ressalvas.</p>
+      </div>
+      <div class="nivel-card nivel-bronze">
+        <span class="medalha">🥉</span>
+        <strong>Bronze</strong>
+        <p>Nota 4 a 5,9. Vários relatos de atenção.</p>
+      </div>
+      <div class="nivel-card nivel-alerta">
+        <span class="medalha">🚩</span>
+        <strong>Alerta</strong>
+        <p>Nota abaixo de 4. Padrão repetido de relatos graves.</p>
+      </div>
+    </div>
+
+    <div class="caracteristicas-legenda">
+      <span class="tag">👩‍💼 CEO é mulher</span>
+      <span class="tag">👥 +50% do time é composto por mulheres</span>
+      <span class="tag">📣 Possui canal de denúncia de assédio</span>
+      <span class="tag">⚖️ Equidade salarial auditada</span>
+      <span class="tag">🍼 Licença parental igualitária</span>
+      <span class="tag">🌱 Programa de mentoria para mulheres</span>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RANKING ============ -->
+<section class="ranking" id="ranking">
+  <div class="wrap">
+    <div class="ranking-head">
+      <h2>Ranking da comunidade</h2>
+      <div class="ranking-filtros">
+        <button class="filtro ativo">Todas</button>
+        <button class="filtro">Diamante</button>
+        <button class="filtro">Ouro</button>
+        <button class="filtro">Prata</button>
+        <button class="filtro">Bronze</button>
+        <button class="filtro">Alerta</button>
+      </div>
+    </div>
+
+    <div class="empresas-grid">
+
+      <!-- DIAMANTE -->
+      <article class="empresa-card nivel-diamante">
+        <div class="empresa-topo">
+          <span class="empresa-medalha">💎</span>
+          <div>
+            <h3>Vênus Tech</h3>
+            <span class="empresa-setor">Software B2B · 340 funcionárias(os)</span>
+          </div>
+          <div class="empresa-nota">9.8</div>
+        </div>
+        <div class="empresa-tags">
+          <span class="tag">👩‍💼 CEO mulher</span>
+          <span class="tag">👥 +50% mulheres</span>
+          <span class="tag">📣 Canal de denúncia</span>
+          <span class="tag">🍼 Licença igualitária</span>
+          <span class="tag">🌱 Mentoria</span>
+        </div>
+        <p class="empresa-relato">"Entrei júnior e em dois anos liderava um squad. Nunca fui a única mulher numa reunião de decisão." <span class="relato-autora">— avaliação de ex-funcionária, Eng. de Software</span></p>
+        <div class="empresa-acoes">
+          <a href="#" class="ver-mais">Ver 214 avaliações →</a>
+          <button type="button" class="btn-enviar-cv" data-empresa="Vênus Tech">📄 Enviar currículo</button>
+        </div>
+      </article>
+
+      <!-- OURO -->
+      <article class="empresa-card nivel-ouro">
+        <div class="empresa-topo">
+          <span class="empresa-medalha">🥇</span>
+          <div>
+            <h3>Nimbus Cloud</h3>
+            <span class="empresa-setor">Infraestrutura em nuvem · 890 funcionárias(os)</span>
+          </div>
+          <div class="empresa-nota">8.6</div>
+        </div>
+        <div class="empresa-tags">
+          <span class="tag">👩‍💼 CEO mulher</span>
+          <span class="tag">📣 Canal de denúncia</span>
+          <span class="tag">⚖️ Equidade salarial</span>
+        </div>
+        <p class="empresa-relato">"Salário justo e promoção clara. O único ponto fraco é que a diretoria técnica ainda é quase toda masculina." <span class="relato-autora">— avaliação de funcionária atual, Dados</span></p>
+        <div class="empresa-acoes">
+          <a href="#" class="ver-mais">Ver 152 avaliações →</a>
+          <button type="button" class="btn-enviar-cv" data-empresa="Nimbus Cloud">📄 Enviar currículo</button>
+        </div>
+      </article>
+
+      <!-- PRATA -->
+      <article class="empresa-card nivel-prata">
+        <div class="empresa-topo">
+          <span class="empresa-medalha">🥈</span>
+          <div>
+            <h3>ByteForge Labs</h3>
+            <span class="empresa-setor">Consultoria de TI · 210 funcionárias(os)</span>
+          </div>
+          <div class="empresa-nota">6.9</div>
+        </div>
+        <div class="empresa-tags">
+          <span class="tag">📣 Canal de denúncia</span>
+        </div>
+        <p class="empresa-relato">"O RH escuta, mas as decisões técnicas importantes acontecem num grupo de WhatsApp que nunca me chamaram." <span class="relato-autora">— avaliação de ex-funcionária, DevOps</span></p>
+        <div class="empresa-acoes">
+          <a href="#" class="ver-mais">Ver 88 avaliações →</a>
+          <button type="button" class="btn-enviar-cv" data-empresa="ByteForge Labs">📄 Enviar currículo</button>
+        </div>
+      </article>
+
+      <!-- PRATA 2 -->
+      <article class="empresa-card nivel-prata">
+        <div class="empresa-topo">
+          <span class="empresa-medalha">🥈</span>
+          <div>
+            <h3>CodeHive</h3>
+            <span class="empresa-setor">Startup fintech · 95 funcionárias(os)</span>
+          </div>
+          <div class="empresa-nota">6.1</div>
+        </div>
+        <div class="empresa-tags">
+          <span class="tag">👥 +50% mulheres</span>
+          <span class="tag">🌱 Mentoria</span>
+        </div>
+        <p class="empresa-relato">"Time bacana no dia a dia, mas não existe processo formal pra denúncia — tudo é 'fala com o gestor'." <span class="relato-autora">— avaliação de funcionária atual, Produto</span></p>
+        <div class="empresa-acoes">
+          <a href="#" class="ver-mais">Ver 41 avaliações →</a>
+          <button type="button" class="btn-enviar-cv" data-empresa="CodeHive">📄 Enviar currículo</button>
+        </div>
+      </article>
+
+      <!-- BRONZE -->
+      <article class="empresa-card nivel-bronze">
+        <div class="empresa-topo">
+          <span class="empresa-medalha">🥉</span>
+          <div>
+            <h3>Quantum Dynamics</h3>
+            <span class="empresa-setor">Hardware e IoT · 430 funcionárias(os)</span>
+          </div>
+          <div class="empresa-nota">4.2</div>
+        </div>
+        <div class="empresa-tags">
+          <span class="tag tag-vazia">Sem características cadastradas</span>
+        </div>
+        <p class="empresa-relato">"Clima pesado em reuniões técnicas, interrupções constantes. Pedi promoção três vezes e fui ignorada." <span class="relato-autora">— avaliação de ex-funcionária, Firmware</span></p>
+        <div class="empresa-acoes">
+          <a href="#" class="ver-mais">Ver 67 avaliações →</a>
+          <button type="button" class="btn-enviar-cv" data-empresa="Quantum Dynamics">📄 Enviar currículo</button>
+        </div>
+      </article>
+
+      <!-- ALERTA -->
+      <article class="empresa-card nivel-alerta">
+        <div class="empresa-topo">
+          <span class="empresa-medalha">🚩</span>
+          <div>
+            <h3>NexTech Solutions</h3>
+            <span class="empresa-setor">Desenvolvimento de sistemas · 260 funcionárias(os)</span>
+          </div>
+          <div class="empresa-nota">1.8</div>
+        </div>
+        <div class="empresa-tags">
+          <span class="tag tag-alerta">⚠️ Múltiplos relatos de assédio não apurados</span>
+          <span class="tag tag-alerta">⚠️ Sem canal de denúncia</span>
+        </div>
+        <p class="empresa-relato">"Denunciei ao RH e o processo simplesmente não andou. Pedi desligamento três meses depois." <span class="relato-autora">— avaliação de ex-funcionária, QA</span></p>
+        <div class="empresa-acoes">
+          <a href="#" class="ver-mais">Ver 129 avaliações →</a>
+          <button type="button" class="btn-enviar-cv" data-empresa="NexTech Solutions">📄 Enviar currículo</button>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTE SUA HISTÓRIA ============ -->
+<section class="contar" id="contar">
+  <div class="wrap contar-inner">
+    <div class="contar-texto">
+      <h2>Sua experiência importa.</h2>
+      <p>Trabalhou ou trabalha numa empresa de tecnologia? Conte como foi — o bom e o ruim. Seu relato ajuda outras mulheres a decidirem com mais informação, e pode ser publicado de forma anônima.</p>
+      <ul class="contar-lista">
+        <li>Você escolhe se aparece com nome, apelido ou anônima.</li>
+        <li>Relatos são moderados antes de publicar.</li>
+        <li>Empresas não podem pagar para remover avaliações.</li>
+      </ul>
+    </div>
+    <form class="contar-form" onsubmit="return false;">
+      <label>Nome da empresa
+        <input type="text" placeholder="Ex: Vênus Tech">
+      </label>
+      <label>Sua nota (0 a 10)
+        <input type="number" min="0" max="10" placeholder="8.5">
+      </label>
+      <label>Conte sua história
+        <textarea rows="4" placeholder="O que foi bom, o que foi difícil, o que mudaria..."></textarea>
+      </label>
+      <label class="contar-check">
+        <input type="checkbox"> Prefiro publicar como anônima
+      </label>
+      <button type="submit" class="btn btn-enviar">Publicar relato</button>
+    </form>
+  </div>
+</section>
+
+<!-- ============ DEPOIMENTOS RECENTES ============ -->
+<section class="depoimentos" id="depoimentos">
+  <div class="wrap">
+    <h2>Relatos recentes da comunidade</h2>
+    <div class="depoimentos-grid">
+      <div class="balao">
+        <p>"Troquei de emprego depois de ler os relatos aqui. Hoje trabalho num lugar onde ninguém me chama de 'a menina do TI'."</p>
+        <span class="balao-autora">Usuária Ana R. · avaliou Vênus Tech</span>
+      </div>
+      <div class="balao">
+        <p>"Fiquei surpresa com quantas empresas 'família' na verdade não têm nenhum canal de denúncia formal."</p>
+        <span class="balao-autora">Usuária Camila M. · avaliou NexTech Solutions</span>
+      </div>
+      <div class="balao">
+        <p>"Uso o ParaVênus antes de toda entrevista. Poder ver se a CEO é mulher e se o time é diverso muda tudo."</p>
+        <span class="balao-autora">Usuária Beatriz T. · avaliou Nimbus Cloud</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CRIAR CURRÍCULO ============ -->
+<section class="curriculo" id="criar-curriculo">
+  <div class="wrap">
+    <div class="curriculo-head">
+      <h2>Monte seu currículo</h2>
+      <p class="legenda-sub">Preencha os campos e veja a pré-visualização se atualizar ao lado. Quando terminar, use "Baixar em PDF" — abrimos a impressão do navegador, é só escolher "Salvar como PDF".</p>
+    </div>
+
+    <div class="curriculo-grid">
+      <form class="curriculo-form-builder" id="form-curriculo">
+        <label>Nome completo
+          <input type="text" id="cv-nome" placeholder="Ex: Júlia Ferreira">
+        </label>
+        <label>Cargo desejado
+          <input type="text" id="cv-cargo" placeholder="Ex: Desenvolvedora Front-end">
+        </label>
+        <div class="curriculo-linha">
+          <label>E-mail
+            <input type="email" id="cv-email" placeholder="julia@email.com">
+          </label>
+          <label>Telefone
+            <input type="text" id="cv-telefone" placeholder="(11) 90000-0000">
+          </label>
+        </div>
+        <label>Resumo profissional
+          <textarea id="cv-resumo" rows="3" placeholder="Uma ou duas frases sobre sua trajetória e o que você busca."></textarea>
+        </label>
+        <label>Experiência profissional
+          <textarea id="cv-experiencia" rows="4" placeholder="Cargo — Empresa (período)&#10;Principais responsabilidades e resultados."></textarea>
+        </label>
+        <label>Formação
+          <textarea id="cv-formacao" rows="2" placeholder="Curso — Instituição (ano de conclusão)"></textarea>
+        </label>
+        <label>Habilidades
+          <input type="text" id="cv-habilidades" placeholder="Separe por vírgula: React, Python, Liderança...">
+        </label>
+        <button type="button" class="btn btn-enviar" id="btn-baixar-cv">Baixar em PDF</button>
+      </form>
+
+      <div class="curriculo-preview-wrap">
+        <div class="curriculo-preview" id="cv-preview">
+          <h3 id="prev-nome">Seu nome aparece aqui</h3>
+          <p class="prev-cargo" id="prev-cargo">Cargo desejado</p>
+          <p class="prev-contato" id="prev-contato">e-mail · telefone</p>
+
+          <div class="prev-bloco">
+            <h4>Resumo</h4>
+            <p id="prev-resumo">Seu resumo profissional vai aparecer aqui conforme você digita.</p>
+          </div>
+          <div class="prev-bloco">
+            <h4>Experiência</h4>
+            <p id="prev-experiencia">—</p>
+          </div>
+          <div class="prev-bloco">
+            <h4>Formação</h4>
+            <p id="prev-formacao">—</p>
+          </div>
+          <div class="prev-bloco">
+            <h4>Habilidades</h4>
+            <div class="prev-habilidades" id="prev-habilidades"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MODAL: ENVIAR CURRÍCULO ============ -->
+<dialog id="modal-curriculo" class="modal-curriculo">
+  <form method="dialog" id="form-envio-cv">
+    <h3>Enviar currículo para <span id="modal-empresa-nome">a empresa</span></h3>
+    <p class="modal-sub">Seu currículo vai direto para o time de recrutamento. Você também pode usar o currículo que acabou de montar acima.</p>
+    <label>Seu nome
+      <input type="text" placeholder="Como você quer ser chamada" required>
+    </label>
+    <label>Seu e-mail
+      <input type="email" placeholder="voce@email.com" required>
+    </label>
+    <label>Currículo (PDF)
+      <input type="file" accept=".pdf,.doc,.docx">
+    </label>
+    <label>Mensagem (opcional)
+      <textarea rows="3" placeholder="Conte rapidamente por que quer trabalhar lá..."></textarea>
+    </label>
+    <div class="modal-acoes">
+      <button type="button" class="btn btn-modal-cancelar" data-close-modal>Cancelar</button>
+      <button type="submit" class="btn btn-enviar">Enviar currículo</button>
+    </div>
+  </form>
+</dialog>
+
+<!-- ============ TOAST ============ -->
+<div class="toast" id="toast"></div>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div>
+      <span class="logo logo-footer"><span class="logo-mark">♀</span>ParaVênus</span>
+      <p>Uma plataforma feita por e para mulheres da tecnologia. Modelo de site — empresas e relatos fictícios para fins de demonstração.</p>
+    </div>
+    <div class="footer-cols">
+      <div>
+        <strong>Plataforma</strong>
+        <a href="#ranking">Ranking</a>
+        <a href="#contar">Contar história</a>
+        <a href="#sobre">Sobre os selos</a>
+        <a href="#criar-curriculo">Criar currículo</a>
+      </div>
+      <div>
+        <strong>Comunidade</strong>
+        <a href="#">Diretrizes de moderação</a>
+        <a href="#">Fale com a gente</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  // ---------- Toast ----------
+  const toast = document.getElementById('toast');
+  function mostrarToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('toast-visivel');
+    clearTimeout(toast._timer);
+    toast._timer = setTimeout(() => toast.classList.remove('toast-visivel'), 3200);
+  }
+
+  // ---------- Modal: enviar currículo ----------
+  const modalCv = document.getElementById('modal-curriculo');
+  const modalEmpresaNome = document.getElementById('modal-empresa-nome');
+  const formEnvioCv = document.getElementById('form-envio-cv');
+
+  document.querySelectorAll('.btn-enviar-cv').forEach(btn => {
+    btn.addEventListener('click', () => {
+      modalEmpresaNome.textContent = btn.dataset.empresa;
+      modalCv.showModal();
+    });
+  });
+
+  modalCv.addEventListener('click', (e) => {
+    if (e.target === modalCv) modalCv.close();
+  });
+  modalCv.querySelectorAll('[data-close-modal]').forEach(btn => {
+    btn.addEventListener('click', () => modalCv.close());
+  });
+  formEnvioCv.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const empresa = modalEmpresaNome.textContent;
+    modalCv.close();
+    formEnvioCv.reset();
+    mostrarToast(`Currículo enviado para ${empresa}! (demonstração — nenhum dado foi salvo)`);
+  });
+
+  // ---------- Criar currículo: preview ao vivo ----------
+  const campos = {
+    nome: document.getElementById('cv-nome'),
+    cargo: document.getElementById('cv-cargo'),
+    email: document.getElementById('cv-email'),
+    telefone: document.getElementById('cv-telefone'),
+    resumo: document.getElementById('cv-resumo'),
+    experiencia: document.getElementById('cv-experiencia'),
+    formacao: document.getElementById('cv-formacao'),
+    habilidades: document.getElementById('cv-habilidades'),
+  };
+  const preview = {
+    nome: document.getElementById('prev-nome'),
+    cargo: document.getElementById('prev-cargo'),
+    contato: document.getElementById('prev-contato'),
+    resumo: document.getElementById('prev-resumo'),
+    experiencia: document.getElementById('prev-experiencia'),
+    formacao: document.getElementById('prev-formacao'),
+    habilidades: document.getElementById('prev-habilidades'),
+  };
+
+  function atualizarPreview(){
+    preview.nome.textContent = campos.nome.value.trim() || 'Seu nome aparece aqui';
+    preview.cargo.textContent = campos.cargo.value.trim() || 'Cargo desejado';
+
+    const contatoPartes = [campos.email.value.trim(), campos.telefone.value.trim()].filter(Boolean);
+    preview.contato.textContent = contatoPartes.length ? contatoPartes.join(' · ') : 'e-mail · telefone';
+
+    preview.resumo.textContent = campos.resumo.value.trim() || 'Seu resumo profissional vai aparecer aqui conforme você digita.';
+    preview.experiencia.textContent = campos.experiencia.value.trim() || '—';
+    preview.formacao.textContent = campos.formacao.value.trim() || '—';
+
+    preview.habilidades.innerHTML = '';
+    const habilidades = campos.habilidades.value.split(',').map(h => h.trim()).filter(Boolean);
+    habilidades.forEach(h => {
+      const span = document.createElement('span');
+      span.className = 'tag';
+      span.textContent = h;
+      preview.habilidades.appendChild(span);
+    });
+  }
+  Object.values(campos).forEach(campo => campo.addEventListener('input', atualizarPreview));
+
+  document.getElementById('btn-baixar-cv').addEventListener('click', () => {
+    window.print();
+  });
+</script>
+
+</body>
+</html>
